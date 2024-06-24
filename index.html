@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starck Haven</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./Logo variations_Secondary Logo.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+        <style>
+          input[type=text] {
+            width: 300px; /* Adjust width as needed */
+            box-sizing: border-box;
+            border: 2px solid hsl(39, 76%, 62%);
+            border-radius: 25px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('../images/searchicon.png');
+            background-position: calc(100% - 15px) center;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.5s ease-in-out, box-shadow 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+            outline: none;
+          }
+          
+          input[type=text]:focus {
+            width: 100%;
+            box-shadow: hsl(39, 76%, 62%);
+            border-color: hsl(39, 76%, 62%);;
+          }
+          
+          input[type=text]::placeholder {
+            color: #aaa;
+            font-style: italic;
+            /* Adjust the length of placeholder text */
+            letter-spacing: 1px; /* Increases spacing between letters */
+            text-indent: 10px; /* Indents text from the left */
+          }
+          
+          form {
+            max-width: 600px;
+            margin: 0 auto;
+          }
+        </style>
+        <form>
+          <input type="text" name="search" placeholder="Search..">
+        </form>
+
+
+
+        <div class="header-btn-group">
+
+
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/Logo variations_Secondary Logo 1.png" alt="Tourly logo">
+        </a>
+
+        
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/Logo variations_Primary Logo.png" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link" data-nav-link>about us</a>
+            </li>
+
+            <li>
+              <a href="services.html" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+        
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+
+
+
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">Your Trustly LTL shipping Partner</h2>
+
+          <p class="hero-text">
+            Stark Haven Logistics is a provider of affordable and flexible LTL freight shipping to various
+            Canadian cities as well as cross-border lines.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary">Learn more</button>
+
+            <button class="btn btn-secondary">Contact</button>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+
+      <section class="tour-search">
+        <div class="container">
+
+            <h2 class="h1 hero-title"><font color ="black">Why Consider Stark Haven Logisticsfor Your LTL Freight?</font></h2>
+
+            <p class="hero-text">
+              We have the very service you need, whether you are a small enterprise with infrequent small
+pallets shipment or a large corporation with recurrent LTL demands.
+            </p>
+
+
+            <button type="submit" class="btn btn-secondary">Inquire now</button>
+
+          </form>
+
+        </div>
+      </section>
+
+      <style>
+        /* Reset default margin and padding for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h6 {
+            font-size: 2rem; /* Adjust font size as needed */
+            text-align: center; /* Align center */
+            margin-bottom:0.5px; /* Add margin below the heading */
+        }
+
+        /* Styling for travel section container */
+        .travel {
+            padding: 5rem 0;
+        }
+
+        .travel .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
+        .travel .container .box {
+            flex: 1 1 calc(25% - 2rem);
+            text-align: center;
+            transform: translateY(100px);
+            opacity: 0;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .travel .container .box img {
+            height: 10rem;
+            margin-bottom: 1rem;
+        }
+
+        .travel .container .box h4 {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            font-weight: 600;
+        }
+
+        .travel .container .box p {
+            color: #666;
+        }
+
+        /* Media query for larger screens */
+        @media (max-width: 1200px) {
+            .travel .container .box {
+                flex: 1 1 calc(33.33% - 2rem);
+            }
+
+        }
+
+        /* Media query for medium screens */
+        @media (max-width: 768px) {
+            .travel .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .travel .container .box {
+                flex: 1 1 100%;
+            }
+
+            .travel .container .box img {
+                height: 8rem;
+            }
+
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 480px) {
+            .travel .container .box img {
+                height: 6rem;
+            }
+
+            .travel .container .box h4 {
+                font-size: 1rem;
+            }
+
+            .travel .container .box p {
+                font-size: 0.9rem;
+            }
+            .h6{
+              font-size: 0.1rem;
+            }
+        }
+    </style>
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <h6>WHY STRAK HAVEN IS RIGHT CHOICE?</h6>
+<section class="travel">
+    <div class="container">
+        <div class="box box1">
+            <img src="./assets/images/box1.png" alt="Planning">
+            <div class="content">
+                <h4>Scheduled LTL Services</h4>
+                <p>Regular
+                  pickups and regular
+                  deliveries imply
+                  that cargo will be
+                  transported on time.</p>
+            </div>
+        </div>
+        <div class="box box2">
+            <img src="./assets/images/box2.png" alt="Map">
+            <div class="content">
+                <h4>Door-to-door Shipping</h4>
+                <p>The
+                  comfort and
+                  convenience of all
+                  your LTL deliveries.</p>
+            </div>
+        </div>
+        <div class="box box3">
+            <img src="./assets/images/box3.png" alt="Trust">
+            <div class="content">
+                <h4>Skid and Pallet Shipping</h4>
+                <p>We offer
+                  safe and secure LTL
+                  transportation for
+                  you.</p>
+            </div>
+        </div>
+        <div class="box box4">
+            <img src="./assets/images/box4.png" alt="Support">
+            <div class="content">
+                <h4>Dry Goods Expertise</h4>
+                <p>Proven skills in
+                  handling all kinds of
+                  dry goods
+                  for delivery on time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    function scrollTriggerAnimation(triggerSelector, boxSelectors) {
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: triggerSelector,
+                start: "top 50%",
+                end: "top 80%",
+                scrub: 1,
+            },
+        });
+
+        boxSelectors.forEach((selector, index) => {
+            timeline.to(selector, {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "power1.out",
+                stagger: {
+                    each: 1,
+                }
+            }, `-=${index * 0.5}`);
+        });
+    }
+
+    // Call the function to apply the animation
+    scrollTriggerAnimation(".travel", [".travel .box1", ".travel .box2", ".travel .box3", ".travel .box4"]);
+</script>
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle"></p>
+
+            <h2 class="h2 section-title"></h2>
+
+            <p class="section-text">
+              
+            </p>
+          </div>
+
+          <button class="btn btn-secondary">Contact Us !</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo variations_Secondary_White.png" alt="stack heaven">
+          </a>
+
+          <p class="footer-text">
+
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:" class="contact-link"></a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link"></a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address></address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="">Stark Haven Logistic</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="about.html" class="footer-bottom-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
