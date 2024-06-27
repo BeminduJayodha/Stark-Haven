@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stark Haven</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/service.css">
+ 
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+01 (123) 4567 89</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/Logo variations_Secondary Logo 1 (1).png" alt="">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/Logo variations_Secondary Logo 2.png" alt="Stark Haven logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link" data-nav-link>about us</a>
+            </li>
+
+            <li>
+              <a href="services.html" class="navbar-link" data-nav-link>services</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <a href="services.html" button class="btn btn-primary">Find Out More</button></a>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">Stark Haven Services</h2>
+
+          <p class="hero-text">
+            Stark Sapiente Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
+            voluptatibus habitant?
+            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
+          </p>
+
+          <div class="btn-group">
+            <a href="index.html" button class="btn btn-primary">Learn more</button></a>
+
+            <a href="services.html" button class="btn btn-secondary">Book now</button></a>
+          </div>
+
+        </div>
+      </section>
+
+      
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
+  <!-- 
+        - #POPULAR
+      -->
+      <style>
+        /* Container for popular cards */
+      .popular-card {
+        position: relative;
+        overflow: hidden; /* Ensure content does not overflow */
+        border-radius: 8px; /* Rounded corners for cards */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+        margin-bottom: 20px; /* Spacing between cards */
+      }
+      
+      /* Image container */
+      .popular-card .card-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px; /* Rounded corners for images */
+      }
+      
+      /* Image styles */
+      .popular-card .card-img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: transform 0.3s ease; /* Smooth transform on hover */
+      }
+      
+      /* Color overlay on hover */
+      .popular-card .card-img::after {
+        content: ''; /* Required for pseudo-elements */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0); /* Initially fully transparent */
+        opacity: 0.5; /* Semi-transparent overlay */
+        transition: opacity 0.3s ease; /* Smooth transition for opacity */
+      }
+      
+      /* Show color overlay on hover */
+      .popular-card:hover .card-img::after {
+        background-color: hsl(39, 76%, 62%);
+      }
+      
+      /* Overlay styles */
+      .popular-card .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease; /* Fade effect */
+      }
+      
+      /* Show overlay on hover */
+      .popular-card:hover .overlay {
+        opacity: 1;
+      }
+      
+      /* Text styles within overlay */
+      .popular-card .overlay-text {
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        transition: opacity 0.3s ease; /* Fade in effect */
+      }
+/* Card content container */
+.card-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above overlay */
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent initially */
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition for background color and opacity */
+  opacity: 0; /* Initially hidden */
+  text-align: justify; /* Justify text alignment */
+}
+
+/* Show card content on hover */
+.popular-card:hover .card-content {
+  background-color: rgba(255, 255, 255, 0.408); /* Semi-transparent background on hover */
+  opacity: 1; /* Fully visible on hover */
+}
+
+/* Text styles within card content */
+.card-content .card-subtitle,
+.card-content .card-title,
+.card-content .card-text {
+  color: black; /* Text color */
+  font-size: 16px; /* Adjusted font size */
+  font-weight: normal; /* Normal font weight */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+  transition: opacity 0.3s ease; /* Fade in effect */
+  opacity: 0; /* Initially hidden */
+  margin: 0; /* Remove default margins */
+  padding: 10px; /* Padding for better spacing */
+}
+
+/* Fade in text on hover */
+.popular-card:hover .card-content .card-subtitle,
+.popular-card:hover .card-content .card-title,
+.popular-card:hover .card-content .card-text {
+  opacity: 1; /* Fully visible on hover */
+}
+
+
+
+      
+      /* Fade in text on overlay hover */
+      .popular-card:hover .overlay-text {
+        opacity: 1;
+      }
+      
+      /* Media query for responsive design */
+      @media screen and (max-width: 768px) {
+        .popular-card .overlay-text {
+          font-size: 18px; /* Adjust font size for smaller screens */
+        }
+      }
+      
+      </style>
+            <section class="popular" id="destination">
+              <div class="container">
+      
+                <p class="section-subtitle"></p>
+      
+                <h2 class="h2 section-title">Our Services</h2>
+      
+                <p class="section-text">
+                  At Stark Haven Logistics, we are committed to providing exceptional service that meets and exceeds your expectations. 
+                </p>
+      
+                <ul class="popular-list">
+      
+                  <li>
+                    <div class="popular-card">
+      
+                      <figure class="card-img">
+                        <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                      </figure>
+      
+                      <div class="card-content">
+      
+                        <p class="card-subtitle">
+                          <a href="#"></a>
+                        </p>
+      
+                        <h3 class="card-title">
+                          <a href="#">LTL (Less-Than-Truckload)</a>
+                        </h3>
+      
+                        <p class="card-text">
+                          We offer cost-effective LTL shipping with consolidated savings, scheduled departures, and nationwide coverage. Our cross-border expertise ensures smooth and prompt deliveries.
+                        </p>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+      
+                  <li>
+                    <div class="popular-card">
+      
+                      <figure class="card-img">
+                        <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                      </figure>
+      
+                      <div class="card-content">
+      
+      
+                        <p class="card-subtitle">
+                          <a href="#"></a>
+                        </p>
+      
+                        <h3 class="card-title">
+                          <a href="#">FTL (Full Truckload)</a>
+                        </h3>
+      
+                        <p class="card-text">
+                          Our FTL services provide faster transit times, reduced damage risk, enhanced security, and increased flexibility. We cater to high-value and time-sensitive deliveries.
+                        </p>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+      
+                  <li>
+                    <div class="popular-card">
+      
+                      <figure class="card-img">
+                        <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                      </figure>
+      
+                      <div class="card-content">
+      
+                        <p class="card-subtitle">
+                          <a href="#"></a>
+                        </p>
+      
+                        <h3 class="card-title">
+                          <a href="#">Temperature Controller Transport</a>
+                        </h3>
+      
+                        <p class="card-text">
+                          We specialize in the transport of perishable items, maintaining precise temperature control throughout the journey.
+                        </p>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="popular-card">
+      
+                      <figure class="card-img">
+                        <img src="./assets/images/popular-5.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                      </figure>
+      
+                      <div class="card-content">
+      
+      
+                        <p class="card-subtitle">
+                          <a href="#"></a>
+                        </p>
+      
+                        <h3 class="card-title">
+                          <a href="#">Intermodal Shipping</a>
+                        </h3>
+      
+                        <p class="card-text">
+                          Combining multiple modes of transportation, our intermodal services offer reduced costs, enhanced efficiency, and improved sustainability. We provide domestic and international intermodal solutions.
+                        </p>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="popular-card">
+      
+                      <figure class="card-img">
+                        <img src="./assets/images/popular-4.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                      </figure>
+      
+                      <div class="card-content">
+                        <p class="card-subtitle">
+                          <a href="#"></a>
+                        </p>
+      
+                        <h3 class="card-title">
+                          <a href="#">Expedited Shipping</a>
+                        </h3>
+      
+                        <p class="card-text">
+                          For time-sensitive deliveries, we offer same-day, next-day, and expedited air freight options. Our dedicated truckload services ensure speed and control for urgent shipments.
+                        </p>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="popular-card">
+      
+                      <figure class="card-img">
+                        <img src="./assets/images/popular-6.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                      </figure>
+      
+                      <div class="card-content">
+      
+      
+                        <p class="card-subtitle">
+                          <a href="#"></a>
+                        </p>
+      
+                        <h3 class="card-title">
+                          <a href="#">Hazmat Transportation</a>
+                        </h3>
+      
+                        <p class="card-text">
+                          We handle hazardous materials with the utmost care and compliance, providing safe and secure transport. Our services include over-the-road, intermodal, and temperature-controlled solutions.
+                        </p>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+      
+                </ul>
+      
+      
+      
+              </div>
+            </section>
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+      <style>
+        .cta {
+          position: relative;
+          overflow: hidden;
+          padding: 50px 0;
+          color: #fff;
+          background: hsl(39, 76%, 62%); /* You can change the background color */
+        }
+      
+        .image-moving {
+          position: absolute;
+          top: 90%; /* Center the image vertically */
+          transform: translateY(-50%); /* Center the image vertically */
+          width: 100px; /* Adjust the size of the image */
+          height: auto; /* Maintain aspect ratio */
+          animation: moveLeftToRight 10s linear infinite;
+        }
+      
+        @keyframes moveLeftToRight {
+          0% {
+            left: -100px; /* Start off-screen to the left */
+          }
+          100% {
+            left: calc(100% + 100px); /* Move to just off-screen to the right */
+          }
+          
+        }
+      
+        .cta-content {
+          text-align: center;
+          position: relative;
+          z-index: 2;
+        }
+          /* Media query for mobile view */
+        @media (max-width: 768px) {
+           .image-moving {
+            width: 50px; /* Adjust the size of the image for mobile view */
+    }
+       .btn-secondary {
+          width: 50%; /* Make the button full width */
+          max-width: 300px; /* Set a maximum width */
+          margin-left: auto;
+          margin-right: auto;
+    }
+  }
+      
+        </style>
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle"></p>
+
+            <h2 class="h2 section-title">ONE-STOP GLOBAL LOGISTICS PROVIDER</h2>
+
+            <p class="section-text">
+            </p>
+          </div>
+
+          <a href="contact.html">
+    <button class="btn btn-secondary">Contact Us</button>
+</a>
+
+        </div>
+        <img src="./assets/images/secure-delivery-icon.png" alt="Moving Car" class="image-moving">
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo variations_Secondary_White.png" alt="stack heaven">
+          </a>
+
+          <p class="footer-text">
+
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+          Feel free to contact and reach us!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.starkhaven.com" class="contact-link">info.starkhaven.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>Canada</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="">Stark Haven Logistic</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="about.html" class="footer-bottom-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="footer-bottom-link">Services</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="footer-bottom-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    
+
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
