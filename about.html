@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stark Haven</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
+ 
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+01 (123) 4567 89</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/Logo variations_Secondary Logo 1 (1).png" alt="">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/Logo variations_Secondary Logo 2.png" alt="Stark Haven logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link" data-nav-link>about us</a>
+            </li>
+
+            <li>
+              <a href="services.html" class="navbar-link" data-nav-link>services</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <a href="services.html" button class="btn btn-primary">Find Out More</button></a>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">About Stark Haven</h2>
+
+          <p class="hero-text">
+            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
+            voluptatibus habitant?
+            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
+          </p>
+
+          <div class="btn-group">
+            <a href="index.html" button class="btn btn-primary">Learn more</button></a>
+
+            <a href="services.html" button class="btn btn-secondary">Book now</button></a>
+          </div>
+
+        </div>
+      </section>
+
+      
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+  <style>/* destination section starts here  */
+  .destinations {
+      width: 100%;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+  }
+  
+  .destinations .container {
+      width: 100%;
+  }
+  
+  .destinations .container .container-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the container-box content */
+      gap: 1rem;
+  }
+  
+  .destinations .container .container-box .heading {
+      max-width: 30rem;
+      opacity: 0;
+      animation: moveToCenter 1s forwards;
+  }
+  
+  @keyframes moveToCenter {
+      0% {
+          transform: translateX(-200px);
+          opacity: 0;
+      }
+      100% {
+          transform: translateX(0);
+          opacity: 1;
+          text-align: center; /* Ensure the heading is centered */
+      }
+  }
+  
+  .destinations .container .container-box .content {
+      max-width: 35rem;
+      transform: translateX(-200px);
+      opacity: 0;
+      animation: moveToCenter 1s forwards;
+  }
+  
+  .destinations .container .container-box .content p {
+      line-height: 1.7;
+      color: #666;
+      margin-bottom: 1rem;
+  }
+  
+  .destinations .container .container-box .content a {
+      color: var(--green-color);
+      font-weight: 600;
+  }
+  
+  .destinations .container .container-box .content a i {
+      margin-left: .5rem;
+  }
+  
+  .destinations .container .container-box .content a:hover i {
+      margin-left: .1rem;
+  }
+  
+  .gallery {
+      margin-top: 4rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Three columns */
+      grid-template-rows: repeat(2, 20rem); /* Two rows with fixed height */
+      gap: 1rem;
+  }
+  
+  .gallery .box {
+      overflow: hidden;
+      border-radius: .8rem;
+      position: relative;
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  
+  .gallery .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+  }
+  
+  .gallery .box .text {
+      position: absolute;
+      bottom: 0;
+      padding: 1.5rem 2rem;
+      left: 0;
+      z-index: 1;
+  }
+  
+  .gallery .box .text h2 {
+      font-size: 1.4rem;
+      color: var(--white-color);
+      font-weight: 500;
+  }
+  
+  .heading {
+      font-size: 3rem;
+      text-align: center;
+  }
+  
+  p {
+      text-align: center;
+  }
+  
+  .label {
+      font-size: 1.1rem;
+      color: #666;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+  }
+  .section-text{
+    text-align: center;
+  }
+  
+  @media (max-width: 910px) {
+      .destinations .container .container-box {
+          flex-direction: column;
+          align-items: center;
+          font-size: 0.1rem;
+      }
+  
+      .gallery {
+          grid-template-columns: 1fr; /* Single column for smaller screens */
+          grid-template-rows: repeat(5, 20rem); /* Adjust the number of rows */
+      }
+  }
+  
+  @media (max-width: 767px) {
+      .destinations .container .container-box .content {
+          font-size: 0.1rem;
+          align-items: center;
+      }
+  
+      .gallery {
+          grid-template-columns: 1fr; /* Single column for smaller screens */
+          grid-template-rows: repeat(5, 20rem); /* Adjust the number of rows */
+      }
+  }
+  
+  @media (min-width: 580px) {
+      .destinations .container .container-box .content {
+          font-size: 0.1rem;
+          align-items: center;
+      }      
+  
+      .gallery {
+          grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+          grid-template-rows: repeat(3, 20rem); /* Adjust the number of rows */
+      }
+  }
+  
+  /* destination section ends here  */
+</style>
+
+</head>
+<body>
+  <!-- destinatons section starts here  -->
+  <section class="destinations">
+      <h4 class="label"></h4>
+      <div class="container">
+          <div class="container-box">
+              <h2 class="heading">About Us</h2>
+
+
+              
+          </div>
+          <p>At Stark Haven Logistics, our mission is to provide reliable, efficient, and innovative logistics services that exceed our clients' expectations.
+            We strive to be the trusted partner for all your shipping needs, delivering excellence through our commitment to quality, safety, and customer satisfaction.
+          </p>
+          
+  </section>
+
+
+
+  <!-- destinatons section ends here  -->
+  <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      function galleryAnimation(triggerSelector, boxSelectors) {
+          const timeline = gsap.timeline({
+              scrollTrigger: {
+                  trigger: triggerSelector,
+                  start: "top 100%",
+                  end: "bottom 100%",
+                  scrub: 1,
+              },
+          });
+
+          boxSelectors.forEach((boxSelector) => {
+              timeline.to(boxSelector, {
+                  y: 0,
+                  opacity: 1,
+                  duration: 1,
+              });
+          });
+      }
+
+      function swipeAnimation(triggerSelector, boxSelectors) {
+          const timeline = gsap.timeline({
+              scrollTrigger: {
+                  trigger: triggerSelector,
+                  start: "top 50%",
+                  end: "top 100%",
+                  scrub: 3,
+              },
+          });
+
+          boxSelectors.forEach((boxSelector) => {
+              timeline.to(boxSelector, {
+                  x: 0,
+                  duration: 1,
+                  opacity: 1,
+              });
+          });
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+          swipeAnimation(".destinations", [".destinations .heading", ".destinations .content"]);
+          galleryAnimation(".destinations .gallery", [".destinations .gallery .box1", ".destinations .gallery .box2", ".destinations .gallery .box3", ".destinations .gallery .box4", ".destinations .gallery .box5"]);
+      });
+  </script>
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+      <style>
+        .cta {
+          position: relative;
+          overflow: hidden;
+          padding: 50px 0;
+          color: #fff;
+          background: hsl(39, 76%, 62%); /* You can change the background color */
+        }
+      
+        .image-moving {
+          position: absolute;
+          top: 90%; /* Center the image vertically */
+          transform: translateY(-50%); /* Center the image vertically */
+          width: 100px; /* Adjust the size of the image */
+          height: auto; /* Maintain aspect ratio */
+          animation: moveLeftToRight 10s linear infinite;
+        }
+      
+        @keyframes moveLeftToRight {
+          0% {
+            left: -100px; /* Start off-screen to the left */
+          }
+          100% {
+            left: calc(100% + 100px); /* Move to just off-screen to the right */
+          }
+          
+        }
+      
+        .cta-content {
+          text-align: center;
+          position: relative;
+          z-index: 2;
+        }
+          /* Media query for mobile view */
+        @media (max-width: 768px) {
+           .image-moving {
+            width: 50px; /* Adjust the size of the image for mobile view */
+    }
+       .btn-secondary {
+          width: 50%; /* Make the button full width */
+          max-width: 300px; /* Set a maximum width */
+          margin-left: auto;
+          margin-right: auto;
+    }
+  }
+      
+        </style>
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle"></p>
+
+            <h2 class="h2 section-title">Are you interested in joining our team?</h2>
+
+
+            <p class="section-text"> Contact us using our convenient contact form, and we'll respond to you promptly.
+            </p>
+          </div>
+
+          <button class="btn btn-secondary">Contact Us</button>
+
+        </div>
+        <img src="./assets/images/secure-delivery-icon.png" alt="Moving Car" class="image-moving">
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo variations_Secondary_White.png" alt="stack heaven">
+          </a>
+
+          <p class="footer-text">
+
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+          Feel free to contact and reach us!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.starkhaven.com" class="contact-link">info.starkhaven.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>Canada</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="">Stark Haven Logistic</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="about.html" class="footer-bottom-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="footer-bottom-link">Services</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="footer-bottom-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    
+
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
