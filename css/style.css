@@ -365,7 +365,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/home2.jpg");
+  background-image: url("../images/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
